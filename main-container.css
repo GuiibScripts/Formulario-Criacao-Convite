@@ -1,0 +1,36 @@
+.main-container {
+    background-image: url(./assets/Background.png);
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 100vh;
+
+    max-width: 400px;
+
+
+
+    & div {
+        padding: 2rem;
+        max-width: 336px;
+    }
+
+    & div img {
+        width: 2.81rem;
+    }
+
+    & div h1 {
+       margin-block: 1rem 0.25rem;
+       font-family: var(--font-family);
+       color: var(--pink);
+    }
+
+    & div p {
+        color: var(--text-body);
+        font-size: var( --body-xs);
+
+    }
+
+
+    
+
+}

@@ -1,0 +1,27 @@
+.aside-container {
+    padding-top: 5rem;
+    padding-inline: 8.125rem;
+    color: white;
+
+    & h1 {
+        font: var(--heading-md);
+        margin-bottom: 2.5rem;
+    }
+}
+
+.aside-container fieldset {
+    display: grid;
+    grid-template-columns: minmax(272px 1fr);
+    border: none;
+}
+
+.input-container input {
+    background-color: var(--input-base);
+    border: 1px solid;
+    border-color: var(--input-stroke);
+    border-radius: 8px;
+    height: 3rem;
+    width: 100%;
+
+}
+

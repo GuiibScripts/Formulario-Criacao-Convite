@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -47,17 +48,37 @@
 
 }
 
-header {
-    box-sizing: border-box;
-
-}
-
-.container {
-    background-color: var(--shape-background);
-    display: grid;
-    grid-template-columns: 400px 1fr;
-    padding-top: 25px;
-    padding-left: 12px;
-    gap: 28px;
+body {
     height: 100vh;
+    background-color: var(--shape-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
+#bg-container {
+    display: grid;
+    grid-template-columns: 25rem 51.25rem;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 25px;
+    margin-inline: 12px;
+    gap: 20px;
+    overflow: hidden;
+
+
+
+}
+
+
+
+.aside-container {
+    background-color: var(--shape-body);
+    border-radius: .5rem;
+    overflow: auto;
+    
+}
+
+
+

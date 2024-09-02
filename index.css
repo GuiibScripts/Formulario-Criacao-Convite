@@ -1,3 +1,4 @@
 @import url(global.css);
-@import url(wrap-fixed.css);
 @import url(bg-forms.css);
+@import url(main-container.css);
+@import url(aside-container.css);

@@ -24,63 +24,95 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
+
 <body>
-    <header>
-        <div class="container">
-            <div class="wrap-fixed">     
-                <div class="festive">
-                    <img src="./assets/Logo.svg" alt="logo">
-                    <h1>Festivite</h1>
-                    <p>Crie um convite digital para o seu evento</p>
-                </div>       
+    <div id="bg-container">
+        <main class="main-container">
+            <div>
+                <img src="./assets/Logo.svg" alt="">
+                <h1>Festivite</h1>
+                <p>Crie um convite digital para o seu evento</p>
+
             </div>
 
-            <div class="bg-form">
+        </main>
 
-                <div action="form-main">
-                    <h2>Crie seu convite</h2>
+        <aside class="aside-container">
+            <h1>Crie seu convite</h1>
 
+            <p><img src="./assets/icons/calendar.svg" alt="">Sobre o evento</p>
 
-                    <img src="./assets/icons/calendar.svg" alt="icone calendario">
-                    <span>Sobre o evento</span>
-
-                    <form action="form-dados">
-                        <legend>Título
-                            <input type="text">
-                        </legend>
-
-                        <legend>Início
-                            <input type="date">
-                        </legend>
-
-                        <legend>Fim
-                            <input type="date">
-                        </legend>
-
-                        <legend>
-                            <input type="radio" name="option" value="Presencial">
-                            Presencial
-                        </label>
-                        <label>
-                            <input type="radio" name="option" value="Online">
-                            Online
-                        </legend>
-
-                        <legend>local
-                            <input type="adress">
-                        </legend>
-
-                        <legend>Descrição
-                            <input type="text">
-                        </legend>
-                    </form>
-                  
+            <fieldset class="Titulo">
+                <legend>Título</legend>
+                <div class="input-container">
+                    <input 
+                        type="text" 
+                        placeholder="Nome do evento">
                 </div>
-               
-            </div>
+            </fieldset>
 
-        </div>
-    </header>
+            <fieldset class="start-end">
+                <legend>Inicio</legend>
+                <div class="input-container">
+                    <input 
+                        type="date">
+                </div>
+
+                <legend>Fim</legend>
+                <div class="input-container">
+                    <input 
+                        type="date">
+                </div>
+            </fieldset>
+
+            <fieldset class="options-adress">
+
+                <legend>Tipo</legend>
+                <div class="input-container">
+                    <div class="options-container">
+                        <div class="options-intern">
+                            <input type="radio" name="presencial" id="presencial">
+                            <label for="presencial"><img src="./assets/icons/building-2.svg" alt="presencial"> Presencial</label>
+                        </div>
+                    </div>
+                    <div class="options-container">
+                        <div class="options-intern">
+                            <input type="radio" name="presencial" id="online">
+                            <label for="online"><img src="./assets/icons/video.svg" alt="online">Online</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <legend>Local</legend>
+                <div class="input-container">
+                    <input 
+                        type="adress" 
+                        placeholder="Nome do evento">
+                </div>
+            </fieldset>
+
+            <fieldset class="description">
+                <legend>Descrição</legend>
+                <div class="input-container">
+                    <input 
+                        type="text" 
+                        placeholder="Nome do evento">
+                </div>
+            </fieldset>
+
+
+
+
+
+
+
+        </aside>
+
+
+
+    </div>
+
 
 
 </body>
