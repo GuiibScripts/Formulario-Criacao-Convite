@@ -14,15 +14,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crie seu Convite</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="Leckerli-One">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&display=swap" rel="baloo-2">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="open-sans">
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
 
 
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+    <header>
+        <div class="container">
+            <div class="wrap-fixed">     
+                <div class="festive">
+                    <img src="./assets/Logo.svg" alt="logo">
+                    <h1>Festivite</h1>
+                    <p>Crie um convite digital para o seu evento</p>
+                </div>       
+            </div>
+
+            <div class="bg-form">
+
+                <div action="form-main">
+                    <h2>Crie seu convite</h2>
+
+
+                    <img src="./assets/icons/calendar.svg" alt="icone calendario">
+                    <span>Sobre o evento</span>
+
+                    <form action="form-dados">
+                        <legend>Título
+                            <input type="text">
+                        </legend>
+
+                        <legend>Início
+                            <input type="date">
+                        </legend>
+
+                        <legend>Fim
+                            <input type="date">
+                        </legend>
+
+                        <legend>
+                            <input type="radio" name="option" value="Presencial">
+                            Presencial
+                        </label>
+                        <label>
+                            <input type="radio" name="option" value="Online">
+                            Online
+                        </legend>
+
+                        <legend>local
+                            <input type="adress">
+                        </legend>
+
+                        <legend>Descrição
+                            <input type="text">
+                        </legend>
+                    </form>
+                  
+                </div>
+               
+            </div>
+
+        </div>
+    </header>
+
 
 </body>
 </html>

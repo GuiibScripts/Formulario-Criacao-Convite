@@ -10,7 +10,7 @@
 
     --purple: #B259FF;
     --fuschia: #FF59F9;
-    --ping: #FF598B;
+    --pink: #FF598B;
     --orange: #FF8B59;
     --yellow: #FFCD59;
     --lime: #E1FF59;
@@ -41,16 +41,23 @@
     --heading-md: bold 28px var(--font-family2);
     --heading-sm: bold 18px var(--font-family2);
 
-    --body-md: 16px (var(--font-family3));
-    --body-sm: 14px (var(--font-family3));
-    --body-xs: 12px (var(--font-family3));
-    
-
-
-
-
-
+    --body-md: 16px var(--font-family3);
+    --body-sm: 14px var(--font-family3);
+    --body-xs: 12px var(--font-family3);
 
 }
 
+header {
+    box-sizing: border-box;
 
+}
+
+.container {
+    background-color: var(--shape-background);
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    padding-top: 25px;
+    padding-left: 12px;
+    gap: 28px;
+    height: 100vh;
+}
