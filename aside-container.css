@@ -2,6 +2,7 @@
     padding-top: 5rem;
     padding-inline: 8.125rem;
     color: white;
+    width: 100%;
 
     & h1 {
         font: var(--heading-md);
@@ -57,6 +58,7 @@ input[type="date"] {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    /* background-color: red; */
 }
 
 .options-container {
@@ -96,6 +98,18 @@ input[type="date"] {
 
 .options-intern input[type="radio"]:checked + label {
     background-color: var(--input-stroke);
+}
+
+.description div textarea {
+    background-color: var(--input-base);
+    width: 560px;
+    border: 1px solid var(--shape-hover);
+    border-radius: 8px;
+    padding: 10px;
+    color: var(--text-body);
+    max-width: 43rem;
+    width: 100%;
+    max-height: 8.5rem;
 }
 
 
