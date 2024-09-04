@@ -39,6 +39,13 @@
 
 }
 
-.moldura-tema input:checked + label img{
+.moldura-tema input:checked + label {
     border: solid;
+    border-radius: 8px;
+    border-color: var(--brand-mid);
+
+}
+
+label {
+    display: block;
 }
