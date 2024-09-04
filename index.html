@@ -43,8 +43,9 @@
             <p><img src="./assets/icons/calendar.svg" alt="">Sobre o evento</p>
 
             <fieldset class="Titulo">
-                <legend>Título</legend>
                 <div class="input-container">
+                    <legend>Título</legend>
+
                     <input 
                         type="text" 
                         placeholder="Nome do evento">
@@ -52,14 +53,16 @@
             </fieldset>
 
             <fieldset class="start-end">
-                <legend>Inicio</legend>
                 <div class="input-container">
+                    <legend>Inicio</legend>
+
                     <input 
                         type="date">
                 </div>
 
-                <legend>Fim</legend>
                 <div class="input-container">
+                    <legend>Fim</legend>
+
                     <input 
                         type="date">
                 </div>
@@ -67,38 +70,49 @@
 
             <fieldset class="options-adress">
 
-                <legend>Tipo</legend>
                 <div class="input-container">
-                    <div class="options-container">
-                        <div class="options-intern">
-                            <input type="radio" name="presencial" id="presencial">
-                            <label for="presencial"><img src="./assets/icons/building-2.svg" alt="presencial"> Presencial</label>
+                    <legend>Tipo</legend>
+
+                        <div class="options-container">
+
+                            <div class="options-intern">
+                                <input type="radio" name="option" id="presencial">
+                                <label for="presencial">
+                                    <img src="./assets/icons/building-2.svg" alt="presencial"> Presencial
+                                </label>
+                            </div>
+
+                                <div class="options-intern">
+                            
+                                <input type="radio" name="option" id="online">
+                                <label for="online">
+                                    <img src="./assets/icons/video.svg" alt="online"> Online
+                                </label>
+                            </div>
+                            
                         </div>
-                    </div>
-                    <div class="options-container">
-                        <div class="options-intern">
-                            <input type="radio" name="presencial" id="online">
-                            <label for="online"><img src="./assets/icons/video.svg" alt="online">Online</label>
-                        </div>
-                    </div>
                 </div>
 
 
-                <legend>Local</legend>
                 <div class="input-container">
+                    <legend>Local</legend>
+
                     <input 
                         type="adress" 
-                        placeholder="Nome do evento">
+                        placeholder="Link ou endereço">
                 </div>
             </fieldset>
 
             <fieldset class="description">
                 <legend>Descrição</legend>
                 <div class="input-container">
-                    <input 
-                        type="text" 
-                        placeholder="Nome do evento">
-                </div>
+                    <textarea 
+                    name="10" 
+                    rows="10"        
+                    placeholder="Escreva sobre os detalhes do evento"            
+                    >
+                        
+                    </textarea>
             </fieldset>
 
 

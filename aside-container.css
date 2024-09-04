@@ -7,6 +7,17 @@
         font: var(--heading-md);
         margin-bottom: 2.5rem;
     }
+
+    & img {
+        width: 1.5rem;
+        vertical-align: middle;
+        margin-right: 0.75rem;
+    }
+
+    & p {
+        font: var(--heading-sm);
+        margin-bottom: 1.5rem;
+    }
 }
 
 .aside-container fieldset {
@@ -24,4 +35,77 @@
     width: 100%;
 
 }
+
+
+input::placeholder {
+    color: var(--input-placeholder);
+    padding-left: 10px;
+
+
+    & [type="date"] {
+        color: var(--input-placeholder);
+
+    }
+}
+
+input[type="date"] {
+    color: var(--input-placeholder);
+    padding-left: 10px;
+}
+
+.start-end {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    border-radius: 8px;
+    border-color: var(--input-stroke);
+    background-color: var(--input-base);
+}
+
+.options-adress {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+}
+
+.options-intern {
+    display: grid;
+    height: 3rem;
+    padding: 10px;
+
+    & input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+           
+    }
+
+
+    & label {
+        padding-block: 5px;
+        border-radius: 8px;
+        font: var(--body-sm);
+    }
+}
+
+.options-intern input[type="radio"]:checked + label {
+    background-color: var(--input-stroke);
+}
+
+
+
+
+
+
+
+
+
+
+
 
