@@ -1,0 +1,44 @@
+.tema-container {
+
+    & .moldura-tema {
+        width: 160px;
+        height: 120px;
+        border-radius: 8px;
+        /* border: solid; */
+        margin-bottom: 1rem;
+
+        background-color: var(--input-stroke);
+    }
+
+    & legend {
+        margin-bottom: 1rem;
+    }
+
+    & img {
+        width: 100%;
+        padding: 4px;
+        border: 8px;
+    }
+}
+
+.moldura-tema label{
+    & p {
+        text-align: center;
+        font: var(--body-md);
+        color: var(--text-body);
+    }
+}
+
+.moldura-tema input[type="radio"] {
+    display: none;
+}
+
+.input-tema-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.moldura-tema input:checked + label img{
+    border: solid;
+}
