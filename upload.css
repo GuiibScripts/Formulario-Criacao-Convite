@@ -60,7 +60,7 @@
 
 
 
-input:checked  + label img {
+.box-one input:checked  + label img {
     content: url(./assets/dados/lightmode.svg);
 
 }
