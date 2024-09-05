@@ -1,0 +1,97 @@
+.upload  {
+    padding-bottom: 48px;
+
+    & legend{
+    font: var(--body-md);
+    color: var(--text-heading);}
+
+    & span {
+        font: var(--body-md);
+        color: var(--text-body);
+    }
+}
+
+
+.enviar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 119px;
+    height: 48px;
+    place-content: center;
+    background-color: var(--input-stroke);
+    border-radius: 8px;
+    padding: 20px;
+
+}
+
+.box-two label span {
+    place-content: center;
+}
+
+.upload-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+
+    & .box-two label{
+        display: flex;
+        gap: 20px;
+
+    }
+
+    & .box-one label{
+        padding: 20px;
+        background-color: var(--input-stroke);
+        width: 176px;
+        height: 48px;
+        place-content: center;
+        border-radius: 8px;
+
+        
+    }
+    
+
+    & input { display: none;
+    }
+    
+}
+
+
+
+
+
+
+input:checked  + label img {
+    content: url(./assets/dados/lightmode.svg);
+
+}
+
+input:checked + label .toggle-text::before {
+    content: "Claro";
+}
+
+.toggle-text::before {
+    content: 'Escuro'; 
+}
+
+.dados-container div input{
+width: 700px;
+}
+
+#email {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 1fr);
+    gap: 20px;
+
+
+    & input {
+        margin-top: 16px;
+        width: 360px;
+    }
+
+
+
+}
+
+hr {
+    margin-block: 48px 40px;
+}
