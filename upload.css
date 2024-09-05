@@ -94,4 +94,49 @@ width: 700px;
 
 hr {
     margin-block: 48px 40px;
+    width: 670px;
+}
+
+.termo-container input:checked + label img{
+    content: url(./assets/dados/checked.svg);
+
+}
+
+mark {
+    background-color: transparent;
+    color: var(--brand-mid)
+}
+
+.termo-container  {
+    padding-bottom:  48px;
+    font-family: var(--font-family1);
+    color: var(--text-body);
+
+    gap: 10px;
+
+    & input {display: none;}
+}
+
+input[type="submit"] {
+    position: absolute;
+    display: none;
+}
+
+.submit-container div {
+    background-color: var(--brand-mid);
+    width: 177px;
+    height: 48px;
+    border-radius: 8px;
+    place-content: center;
+    margin-bottom: 80px;
+    margin-left: auto;
+
+    & label {
+        margin-left: 20px;
+
+        & span {
+            font: var(--heading-sm) ;
+        }
+    }
+    
 }
