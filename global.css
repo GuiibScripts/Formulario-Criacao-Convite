@@ -48,6 +48,12 @@
     --body-md: 16px var(--font-family3);
     --body-sm: 14px var(--font-family3);
     --body-xs: 12px var(--font-family3);
+    overflow-x: hidden;
+
+}
+
+html {
+    overflow-x: hidden;
 
 }
 
